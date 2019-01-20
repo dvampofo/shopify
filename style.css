@@ -88,45 +88,45 @@ button {
   /* margin: 0; */
   padding: 0.25em 0.825em;
 
-  background: rgba(3, 91, 168, 1);
+  background: rgba(3, 59, 107, 1);
   background: -moz-linear-gradient(
     left,
-    rgba(3, 91, 168, 1) 0%,
-    rgba(3, 91, 168, 1) 15%,
+    rgba(3, 59, 107, 1) 0%,
+    rgba(3, 59, 107, 1) 31%,
     rgba(19, 125, 26, 1) 100%
   );
   background: -webkit-gradient(
     left top,
     right top,
-    color-stop(0%, rgba(3, 91, 168, 1)),
-    color-stop(15%, rgba(3, 91, 168, 1)),
+    color-stop(0%, rgba(3, 59, 107, 1)),
+    color-stop(31%, rgba(3, 59, 107, 1)),
     color-stop(100%, rgba(19, 125, 26, 1))
   );
   background: -webkit-linear-gradient(
     left,
-    rgba(3, 91, 168, 1) 0%,
-    rgba(3, 91, 168, 1) 15%,
+    rgba(3, 59, 107, 1) 0%,
+    rgba(3, 59, 107, 1) 31%,
     rgba(19, 125, 26, 1) 100%
   );
   background: -o-linear-gradient(
     left,
-    rgba(3, 91, 168, 1) 0%,
-    rgba(3, 91, 168, 1) 15%,
+    rgba(3, 59, 107, 1) 0%,
+    rgba(3, 59, 107, 1) 31%,
     rgba(19, 125, 26, 1) 100%
   );
   background: -ms-linear-gradient(
     left,
-    rgba(3, 91, 168, 1) 0%,
-    rgba(3, 91, 168, 1) 15%,
+    rgba(3, 59, 107, 1) 0%,
+    rgba(3, 59, 107, 1) 31%,
     rgba(19, 125, 26, 1) 100%
   );
   background: linear-gradient(
     to right,
-    rgba(3, 91, 168, 1) 0%,
-    rgba(3, 91, 168, 1) 15%,
+    rgba(3, 59, 107, 1) 0%,
+    rgba(3, 59, 107, 1) 31%,
     rgba(19, 125, 26, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#035ba8', endColorstr='#137d1a', GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#033b6b', endColorstr='#137d1a', GradientType=1 );
 }
 
 input {

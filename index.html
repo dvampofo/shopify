@@ -38,8 +38,11 @@
           value=""
           class="userInput"
           placeholder="Search for..."
+          onPress="return empty()"
         />
-        <button id="myBtn"><i class="fi-magnifying-glass"></i></button>
+        <button id="myBtn" onClick="return empty()">
+          <i class="fi-magnifying-glass"></i>
+        </button>
       </div>
 
       <div class="container"></div>
@@ -64,12 +67,26 @@
       inputText = $("input").val();
     });
 
+    function empty() {
+      var x;
+      x = document.getElementsByClassName("userInput").value;
+      if (x == "") {
+        // alert("Enter a Valid Roll Number");
+        return false;
+      }
+    }
+
     // Pressing Enter button
     var input = document.getElementById("myInput");
     input.addEventListener("keyup", function(event) {
       event.preventDefault();
       if (event.keyCode === 13) {
         document.getElementById("myBtn").click();
+      }
+
+      if (!this.value.trim()) {
+        $("#myInput").html("");
+        return;
       }
     });
 
