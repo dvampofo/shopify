@@ -1,0 +1,125 @@
+header {
+  width: 100%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  /* background: #ccc; */
+}
+
+.container .fa-star {
+  color: grey;
+}
+
+.main-container {
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+}
+
+.favContent {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0px;
+  margin: 0px; */
+}
+
+.favoritesStyle {
+  background-color: #d6fff1;
+  /* margin-right: 20px; */
+  /* margin: 0px;
+  padding: 0px; */
+}
+
+button {
+  background-color: #0a8a68; /* Green */
+  border: none;
+  color: white;
+  /* padding: 10px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  /* margin: 4px 1px; */
+  margin-right: 1px;
+  cursor: pointer;
+  height: 42px;
+  width: 42px;
+
+  border-radius: 2px;
+}
+
+.titleMargin {
+  /* margin-right: 150px; */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.favoritesStyle h2 {
+  /* margin: 20px; */
+}
+
+.favoritesStyle .fa-star {
+  color: orange; /* change me to green*/
+}
+
+.favoritesStyle h2 {
+  color: green;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Gradient */
+.wrap {
+  width: 100%;
+  text-align: center;
+  /* margin: 0; */
+  padding: 0.25em 0.825em;
+
+  background: rgb(41, 154, 11);
+  background: -moz-linear-gradient(
+    left,
+    rgb(41, 154, 11) 0%,
+    rgb(18, 132, 226) 0%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(41, 154, 11) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgb(41, 154, 11) 0%,
+    rgb(18, 132, 226) 0%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(41, 154, 11) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgb(41, 154, 11) 0%,
+    rgb(18, 132, 226) 0%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(18, 132, 226) 22%,
+    rgb(41, 154, 11) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#299a0b', endColorstr='#299a0b',GradientType=1 );
+}
+
+input {
+  width: 90%;
+  height: 40px;
+  margin: 20px 30px 20px 1px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}

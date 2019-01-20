@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Toronto Waste</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="wrap">
+      <div><h2>Toronto Waste Lookup</h2></div>
+    </header>
+    <div class="main-container">
+      <div class="searchText">
+        <input
+          id="myInput"
+          type="text"
+          value=""
+          class="userInput"
+          placeholder="Search for..."
+        />
+        <button id="myBtn"><i class="fi-magnifying-glass"></i></button>
+      </div>
+
+      <div class="container"></div>
+    </div>
+
+    <div class="favoritesStyle">
+      <div class="main-container">
+        <h2>Favorites</h2>
+        <div class="favContent"></div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript">
+    var inputText = "";
+    $("input").change(function() {
+      inputText = $("input").val();
+    });
+
+    // Pressing Enter button
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function(event) {
+      event.preventDefault();
+      if (event.keyCode === 13) {
+        document.getElementById("myBtn").click();
+      }
+    });
+
+    // Clicking Search Icon Button
+    $("button").click(function() {
+      $.ajax({
+        url:
+          "https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000",
+        success: function(result) {
+          let response = inputText;
+          for (var i = 0; i < result.length; i++) {
+            if (result[i].keywords.includes(inputText)) {
+              var htmlContent = "";
+              htmlContent +=
+                ' <p class="titleMargin"> <i class=" fa fa-star" ></i> ' +
+                result[i].title +
+                "</p>" +
+                "<p>" +
+                result[i].body
+                  .replace(/&lt;/g, "<")
+                  .replace(/&gt;/g, ">")
+                  .replace(/&amp;nbsp;/g, " ") +
+                "</p>";
+
+              $(".container").html(htmlContent);
+
+              var isClicked = true;
+              $(".fa-star").click(function() {
+                var color = isClicked ? "grey" : "green";
+                $(this).css("color", color);
+
+                $(".favContent")
+                  .html(htmlContent)
+                  .toggle();
+                isClicked = !isClicked;
+              });
+
+              // /* Change color on click */
+              // $(".fa-star").on("click", function() {
+              //   $(this).toggleClass("clicked");
+              //
+              //   $(".favContent")
+              //     .html(htmlContent)
+              //     .toggle();
+              // });
+
+              console.log(htmlContent);
+            }
+          }
+        }
+      });
+    });
+  </script>
+</html>
