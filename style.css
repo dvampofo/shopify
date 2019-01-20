@@ -3,7 +3,14 @@ header {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
+  font-size: 30px;
   /* background: #ccc; */
+}
+
+body {
+  margin: 0px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .container .fa-star {
@@ -16,6 +23,7 @@ header {
 
 .container {
   display: flex;
+
   justify-content: space-between;
   padding: 0px;
   margin: 0px;
@@ -23,9 +31,10 @@ header {
 
 .favContent {
   display: flex;
+
   justify-content: space-between;
-  /* padding: 0px;
-  margin: 0px; */
+  padding: 0px;
+  margin: 0px;
 }
 
 .favoritesStyle {
@@ -64,7 +73,7 @@ button {
 }
 
 .favoritesStyle .fa-star {
-  color: orange; /* change me to green*/
+  color: green; /* change me to green*/
 }
 
 .favoritesStyle h2 {
@@ -79,41 +88,45 @@ button {
   /* margin: 0; */
   padding: 0.25em 0.825em;
 
-  background: rgb(41, 154, 11);
+  background: rgba(3, 91, 168, 1);
   background: -moz-linear-gradient(
     left,
-    rgb(41, 154, 11) 0%,
-    rgb(18, 132, 226) 0%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(41, 154, 11) 100%
+    rgba(3, 91, 168, 1) 0%,
+    rgba(3, 91, 168, 1) 15%,
+    rgba(19, 125, 26, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(3, 91, 168, 1)),
+    color-stop(15%, rgba(3, 91, 168, 1)),
+    color-stop(100%, rgba(19, 125, 26, 1))
   );
   background: -webkit-linear-gradient(
     left,
-    rgb(41, 154, 11) 0%,
-    rgb(18, 132, 226) 0%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(41, 154, 11) 100%
+    rgba(3, 91, 168, 1) 0%,
+    rgba(3, 91, 168, 1) 15%,
+    rgba(19, 125, 26, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(3, 91, 168, 1) 0%,
+    rgba(3, 91, 168, 1) 15%,
+    rgba(19, 125, 26, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(3, 91, 168, 1) 0%,
+    rgba(3, 91, 168, 1) 15%,
+    rgba(19, 125, 26, 1) 100%
   );
   background: linear-gradient(
     to right,
-    rgb(41, 154, 11) 0%,
-    rgb(18, 132, 226) 0%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(18, 132, 226) 22%,
-    rgb(41, 154, 11) 100%
+    rgba(3, 91, 168, 1) 0%,
+    rgba(3, 91, 168, 1) 15%,
+    rgba(19, 125, 26, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#299a0b', endColorstr='#299a0b',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#035ba8', endColorstr='#137d1a', GradientType=1 );
 }
 
 input {
