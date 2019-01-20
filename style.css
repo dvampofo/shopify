@@ -7,6 +7,14 @@ header {
   /* background: #ccc; */
 }
 
+input {
+  width: 90%;
+  height: 40px;
+  margin: 20px 30px 20px 1px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
 body {
   margin: 0px;
   margin-top: 10px;
@@ -18,7 +26,12 @@ body {
 }
 
 .main-container {
-  margin: 20px;
+  margin: 0px;
+  text-align: center;
+}
+
+.main-container2 {
+  margin-left: 20px;
 }
 
 .container {
@@ -39,37 +52,28 @@ body {
 
 .favoritesStyle {
   background-color: #d6fff1;
-  /* margin-right: 20px; */
-  /* margin: 0px;
-  padding: 0px; */
 }
 
 button {
   background-color: #0a8a68; /* Green */
   border: none;
   color: white;
-  /* padding: 10px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
-  /* margin: 4px 1px; */
   margin-right: 1px;
   cursor: pointer;
-  height: 42px;
-  width: 42px;
+  height: 43px;
+  width: 43px;
+  padding-bottom: 10px;
 
   border-radius: 2px;
 }
 
 .titleMargin {
-  /* margin-right: 150px; */
   overflow: hidden;
   white-space: nowrap;
-}
-
-.favoritesStyle h2 {
-  /* margin: 20px; */
 }
 
 .favoritesStyle .fa-star {
@@ -81,7 +85,7 @@ button {
   font-family: "Roboto", sans-serif;
 }
 
-/*Gradient */
+/*    G R A D I E N T   */
 .wrap {
   width: 100%;
   text-align: center;
@@ -127,12 +131,4 @@ button {
     rgba(19, 125, 26, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#033b6b', endColorstr='#137d1a', GradientType=1 );
-}
-
-input {
-  width: 90%;
-  height: 40px;
-  margin: 20px 30px 20px 1px;
-  border: 1px solid grey;
-  border-radius: 4px;
 }
