@@ -37,7 +37,6 @@ body {
 
 .container {
   display: flex;
-
   justify-content: space-between;
   padding: 0px;
   margin: 0px;
@@ -45,7 +44,6 @@ body {
 
 .favoritesStyle {
   background-color: #d6fff1;
-  max-width: 100%;
 }
 
 .favContent {
@@ -82,7 +80,7 @@ button {
 }
 
 .favoritesStyle .fa-star {
-  color: green; /* change me to green*/
+  color: green;
 }
 
 .favoritesStyle h2 {
