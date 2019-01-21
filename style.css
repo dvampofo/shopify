@@ -27,7 +27,8 @@ body {
 
 .main-container {
   margin: 0px;
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
 }
 
 .main-container2 {
@@ -42,16 +43,18 @@ body {
   margin: 0px;
 }
 
+.favoritesStyle {
+  background-color: #d6fff1;
+  max-width: 100%;
+}
+
 .favContent {
   display: flex;
 
   justify-content: space-between;
   padding: 0px;
   margin: 0px;
-}
-
-.favoritesStyle {
-  background-color: #d6fff1;
+  padding-left: 0px;
 }
 
 button {
@@ -74,6 +77,8 @@ button {
 .titleMargin {
   overflow: hidden;
   white-space: nowrap;
+
+  padding-left: 15px;
 }
 
 .favoritesStyle .fa-star {
@@ -82,7 +87,7 @@ button {
 
 .favoritesStyle h2 {
   color: green;
-  font-family: "Roboto", sans-serif;
+  font-size: 35px;
 }
 
 /*    G R A D I E N T   */
