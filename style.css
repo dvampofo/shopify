@@ -9,10 +9,11 @@ header {
 
 input {
   width: 90%;
-  height: 40px;
+  height: 51px;
   margin: 20px 30px 20px 1px;
   border: 1px solid grey;
   border-radius: 4px;
+  font-size: 30px;
 }
 
 body {
@@ -66,7 +67,7 @@ button {
   margin-right: 1px;
   cursor: pointer;
   height: 52px;
-  width: 52px;
+  width: 53px;
   /* padding-top: 8px; */
   padding-bottom: 10px;
   padding-right: 15px;
