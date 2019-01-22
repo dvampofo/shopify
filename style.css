@@ -22,6 +22,25 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  background-color: #0a8a68; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 24px; */
+  margin-right: 1px;
+  cursor: pointer;
+  height: 52px;
+  width: 53px;
+  /* padding-top: 8px; */
+  padding-bottom: 10px;
+  padding-right: 15px;
+
+  border-radius: 2px;
+}
+
 .container .fa-star {
   color: grey;
 }
@@ -57,25 +76,6 @@ body {
   padding: 0px;
   margin: 0px;
   padding-left: 0px;
-}
-
-button {
-  background-color: #0a8a68; /* Green */
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  /* font-size: 24px; */
-  margin-right: 1px;
-  cursor: pointer;
-  height: 52px;
-  width: 53px;
-  /* padding-top: 8px; */
-  padding-bottom: 10px;
-  padding-right: 15px;
-
-  border-radius: 2px;
 }
 
 .titleMargin {
