@@ -8,7 +8,7 @@ This is the Shopify Web Engineer Intern - Summer 2019 coding challenge. Via the 
 
 ## Technology:
 
-HTML, CSS, jQuery, and JavaScript.
+HTML, CSS, jQuery, JavaScript and Bootstrap.
 
 ## DEMO:
 

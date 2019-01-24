@@ -41,10 +41,12 @@ $(document).ready(function() {
                   .replace(/&gt;/g, ">")
                   .replace(/&amp;nbsp;/g, " ") +
                 "</p>";
-
+              // Push the results to the DOM
               $(".container").html(htmlContent);
 
               var isClicked = true;
+              // If the star icon is clicked, change color and place the item
+              // into the favorites section
               $(".fa-star").click(function() {
                 var color = isClicked ? "green" : "grey";
                 $(this).css("color", color);
